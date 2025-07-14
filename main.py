@@ -10,7 +10,7 @@ API_URL = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
 
 # Google Sheets Setup
 SCOPE = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-CREDS = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', SCOPE)
+CREDS = ServiceAccountCredentials.from_json_keyfile_name('sahama1-bot-8f2acc3d1e9e.json', SCOPE)
 client = gspread.authorize(CREDS)
 
 SHEET_URL = 'https://docs.google.com/spreadsheets/d/149VQbfcpiDt6B3g_QIwgFALegxkuJK6ut_dsIj18YMo/edit'
